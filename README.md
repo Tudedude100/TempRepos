@@ -48,6 +48,10 @@ public class GuessingGame extends JavaPlugin{
 			e.setCancelled(true);
 			if(e.getMessage().equals(playerNum)){
 				p.sendMessage("Congratulations, you got it right!");
+			}else if(playerNum==null){
+				p.sendMessage("ERROR");
+			}else{
+				p.sendMessage("Read incorrectly. Number is " + playerNum);
 			}
 		}
 	}
